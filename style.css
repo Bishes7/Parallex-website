@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+.hero {
+  position: relative;
+}
+.content {
+  width: 350px;
+  height: 200px;
+  background: rgba(128, 128, 128, 0.478);
+  position: absolute;
+  left: 90px;
+  top: 90px;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  padding: 1rem;
+  position: sticky;
+  top: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: goldenrod;
+  font-weight: bolder;
+  padding: 4px;
+  font-size: 18px;
+}
+
+a:hover {
+  background-color: red;
+  font-size: 25px;
+}
+
+.logo {
+  margin-left: 4rem;
+}
+
+.links {
+  margin-right: 7rem;
+}
+
+.v {
+  font-size: 4rem;
+  color: orangered;
+  font-weight: bolder;
+  position: absolute;
+  /* left: 50%; */
+
+  animation: arrow 1s infinite linear;
+}
+
+@keyframes arrow {
+  0% {
+    left: 50%;
+    bottom: 100px;
+  }
+
+  100% {
+    left: 50%;
+    bottom: 1rem;
+  }
+}
+
+.hero1 {
+  background-image: url(./1000_F_216666796_QS63jbmHtGaPe56mYTN7wSwlnVnmOxbf.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.lorem {
+  background-color: white;
+  width: 100%;
+  height: 150px;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  bottom: 0px;
+  position: absolute;
+}
+
+/* to select all the images at once */
+[class^="img"] {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  background-color: rgba(0, 0, 0, 0.668);
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  letter-spacing: 10px;
+  backdrop-filter: 2px;
+}
+
+.img1 {
+  background: url(./laptop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img2 {
+  background: url(./hacker.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img3 {
+  background: url(./tree-736885_1280.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img4 {
+  background: url(./codes.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
